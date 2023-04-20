@@ -69,7 +69,7 @@ hold.addEventListener("click", function () {
     document.getElementById(`score-${currentPlayer}`).textContent =
       scores[currentPlayer];
 
-    if (scores[currentPlayer] >= 30) {
+    if (scores[currentPlayer] >= 100) {
       playing = false;
 
       document.getElementById(
