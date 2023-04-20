@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(0, 0, 0),
+    rgb(52, 70, 121)
+  );
+  color: white;
+}
+
+.content {
+  width: 65vw;
+  height: 80vh;
+  margin: auto;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px black;
+}
+
+.box1,
+.box2 {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 12vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(60, 60, 134),
+    rgb(89, 89, 89)
+  );
+  border-radius: 10px;
+}
+
+.box-loose {
+  opacity: 0.2;
+}
+
+.box1 {
+  opacity: 0.5;
+}
+
+.box2 {
+  opacity: 0.5;
+}
+
+.box1 h1,
+.box2 h1 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 7vh;
+}
+
+.box--active {
+  box-shadow: 5px 5px 10px black;
+  transform: translateY(-3px);
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.box--active h1 {
+  font-weight: 1000;
+}
+
+.score_1,
+.score_2 {
+  font-size: 4.5rem;
+  margin-bottom: 10vh;
+}
+
+.current_1,
+.current_2 {
+  width: 15vw;
+  height: 18vh;
+  margin-left: 8rem;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(0, 0, 0),
+    rgb(52, 70, 121)
+  );
+}
+
+.current {
+  font-size: 1.5rem;
+  padding-top: 12px;
+  margin-bottom: 10px;
+}
+
+.current_score_1,
+.current_score_2 {
+  font-size: 2.5rem;
+}
+/* Center element */
+
+button {
+  z-index: 10;
+  background: #272445;
+  color: rgb(117, 113, 113);
+  position: absolute;
+  padding: 12px 30px;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.new_game {
+  top: 15%;
+}
+
+.image {
+  z-index: 10;
+  position: absolute;
+  top: 30%;
+}
+
+.dice_image {
+  width: 7vw;
+}
+
+.roll_dice {
+  top: 60%;
+}
+
+.hold {
+  top: 70%;
+}
+
+.hidden {
+  opacity: 0;
+}
